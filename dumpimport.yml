@@ -1,0 +1,34 @@
+---
+  - hosts: localhost
+    tasks:
+
+      - name: create a backup
+        mysql_db:
+          name: database to be dumped
+          state: dump
+          target: /path
+          login_host: ip_adress
+          login_user: root
+          login_password: 'pass'
+
+
+      - name: import the database
+        mysql_db:
+          name: database to be imported
+          state: import
+          target: /path
+          login_host: ip_adress
+          login_user: user
+          login_password: 'pass'
+
+
+
+
+
+
+
+
+
+
+
+
