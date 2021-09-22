@@ -8,7 +8,7 @@
           state: dump
           target: /path
           login_host: ip_adress
-          login_user: root
+          login_user: user
           login_password: 'pass'
 
 
